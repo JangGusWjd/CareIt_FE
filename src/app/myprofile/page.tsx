@@ -1,3 +1,11 @@
+import Header from '@/components/myprofile/header'
+import MyProfileForm from '@/components/myprofile/myProfileForm'
+
 export default function MyPage() {
-  return <div>MyPage</div>
+  return (
+    <>
+      <Header />
+      <MyProfileForm />
+    </>
+  )
 }

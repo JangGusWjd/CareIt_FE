@@ -37,13 +37,13 @@ export default function ProfilePage() {
     <StepComplete type={type} />
   ) : (
     <>
-      <header className='flex h-[10%] items-center'>
+      <header className='flex h-[10%] items-center p-4'>
         <ProgressBar step={step} totalSteps={totalSteps} type={type} />
       </header>
       <FormProvider {...methods}>
         <form
           onSubmit={methods.handleSubmit(onSubmit)}
-          className='flex h-[90%] flex-col justify-between'
+          className='flex h-[90%] flex-col justify-between px-4'
         >
           <StepForm step={step} nextStep={nextStep} type={type} />
           {step > 1 && (
